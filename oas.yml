@@ -1,0 +1,28 @@
+components:
+  securitySchemes:
+    AuthorizationHeader:
+      description: Input your token
+      scheme: bearer
+      type: http
+info:
+  contact:
+    email: abce@email.com
+    name: Parvez
+  description: API usually works as expected. But sometimes its not true.
+  license:
+    name: MIT
+    url: https://en.wikipedia.org/wiki/MIT_License
+  termsOfService: http://someurl.oxox
+  title: Backend API
+  version: 1.0.0
+openapi: 3.0.0
+paths: {}
+security:
+- AuthorizationHeader:
+  - read
+  - write
+servers:
+- description: ' Server-1'
+  url: http://www.fake.com
+- description: ' Server-2'
+  url: http://www.fake2.com
